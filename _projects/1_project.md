@@ -4,9 +4,91 @@ title: project 1
 description: with background image
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: university
 related_publications: true
 ---
+
+I created the **_Spotify Insights Hub_** for my final project of the ITP-216 **Applied Python** course. Creating this interactive data
+dashboard marked my first stab at web development. I thoroughly enjoyed the development process and quickly made it as feature-rich
+and deployment-ready as I could using the material I had learned thus far in the course.
+
+To begin, I created a _simple_ (or, at the time, what I thought would be simple) Flask framework of throwing every application function and route in one Python file.
+I quickly abandoned this project structure after 300+ lines of routes pointing every which way in the long, vertical column that was my codespace.
+Rather, I explored the [Flask documentation](https://flask.palletsprojects.com/en/3.0.x/) and taught myself about the common practice of building your Flask app
+around an _application factory_. The most valuable Flask webdev technique I learned here was that of [Blueprints](https://flask.palletsprojects.com/en/3.0.x/blueprints/).
+Modular application design helped me continue beefing up my project by staying organized (and I'm sure helped my professor grade it). Here is how my
+project structure changed:
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+<pre>
+<code>
+├── flaskr/
+│   ├── __init__.py
+│   ├── db.py
+│   ├── schema.sql
+│   ├── auth.py
+│   ├── blog.py
+│   ├── templates/
+</code>
+</pre>
+    </div>
+    <div class="col-sm">
+<pre>
+<code>
+├── flaskr/
+│   ├── __init__.py
+│   ├── db.py
+│   ├── schema.sql
+│   ├── auth.py
+│   ├── blog.py
+│   ├── templates/
+</code>
+</pre>
+    </div>
+
+  </div>
+</div>
+
+```
+├── flaskr/
+│   ├── __init__.py
+│   ├── db.py
+│   ├── schema.sql
+│   ├── auth.py
+│   ├── blog.py
+│   ├── templates/
+│   │   ├── base.html
+│   │   ├── auth/
+│   │   │   ├── login.html
+│   │   │   └── register.html
+│   │   └── blog/
+│   │       ├── create.html
+│   │       ├── index.html
+│   │       └── update.html
+│   └── static/
+│       └── style.css
+├── tests/
+│   ├── conftest.py
+│   ├── data.sql
+│   ├── test_factory.py
+│   ├── test_db.py
+│   ├── test_auth.py
+│   └── test_blog.py
+├── .venv/
+├── pyproject.toml
+└── MANIFEST.in
+```
+
+
+I also
+learned the inner-workings of the `import` statement, beyond simply importing libraries, allowing for cross-file code sharing and, once again, a more modular approach.
+The organizational programming skills I have learned here are, in a way, so foundational that they have shaped and will continue to shape how I approach problems as an
+engineer.
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
