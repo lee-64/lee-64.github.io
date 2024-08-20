@@ -20,13 +20,13 @@ Modular application design helped me continue beefing up my project by staying o
 project structure changed:
 
 
-
+testing
 
 <div class="container">
   <div class="row">
     <div class="col-sm">
-<pre>
-<code>
+      <pre>
+      <code>
 ├── flaskr/
 │   ├── __init__.py
 │   ├── db.py
@@ -34,12 +34,12 @@ project structure changed:
 │   ├── auth.py
 │   ├── blog.py
 │   ├── templates/
-</code>
-</pre>
+      </code>
+      </pre>
     </div>
     <div class="col-sm">
-<pre>
-<code>
+      <pre>
+      <code>
 ├── flaskr/
 │   ├── __init__.py
 │   ├── db.py
@@ -47,8 +47,8 @@ project structure changed:
 │   ├── auth.py
 │   ├── blog.py
 │   ├── templates/
-</code>
-</pre>
+      </code>
+      </pre>
     </div>
 
   </div>
