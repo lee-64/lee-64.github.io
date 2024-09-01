@@ -27,68 +27,47 @@ testing
     <div class="col-sm">
       <pre>
       <code>
-├── flaskr/
-│   ├── __init__.py
-│   ├── db.py
-│   ├── schema.sql
-│   ├── auth.py
-│   ├── blog.py
+├── interactive_music_analytics/
+│   ├── app.py
+│   ├── csv_to_db.py
 │   ├── templates/
+│   │   ├── ...
       </code>
       </pre>
     </div>
     <div class="col-sm">
       <pre>
       <code>
-├── flaskr/
+├── interactive_music_analytics/
 │   ├── __init__.py
-│   ├── db.py
-│   ├── schema.sql
-│   ├── auth.py
+│   ├── artist_metrics.py
+│   ├── config.py
+│   ├── dbhelper.py
 │   ├── blog.py
 │   ├── templates/
+│   │   ├── ...
       </code>
       </pre>
     </div>
-
   </div>
 </div>
 
-```
-├── flaskr/
-│   ├── __init__.py
-│   ├── db.py
-│   ├── schema.sql
-│   ├── auth.py
-│   ├── blog.py
-│   ├── templates/
-│   │   ├── base.html
-│   │   ├── auth/
-│   │   │   ├── login.html
-│   │   │   └── register.html
-│   │   └── blog/
-│   │       ├── create.html
-│   │       ├── index.html
-│   │       └── update.html
-│   └── static/
-│       └── style.css
-├── tests/
-│   ├── conftest.py
-│   ├── data.sql
-│   ├── test_factory.py
-│   ├── test_db.py
-│   ├── test_auth.py
-│   └── test_blog.py
-├── .venv/
-├── pyproject.toml
-└── MANIFEST.in
-```
+At a glance, one app.py file with everything made the project structure seem simple, but approaching the project after leaving it for the night became increasingly difficult.
+I chose to structure my application as a Python package with `__init__.py` to ensure better organization and scalability if the application was to grow. Currently, the project is
+simple enough that I could do without this approach, but it is a good technique I wished to practice for future applications. One of the key benefits I've learned is how this structure
+makes use of relative `import` statements, reducing potential naming conflicts and improving clarity. 
 
-
-I also
-learned the inner-workings of the `import` statement, beyond simply importing libraries, allowing for cross-file code sharing and, once again, a more modular approach.
-The organizational programming skills I have learned here are, in a way, so foundational that they have shaped and will continue to shape how I approach problems as an
+The organizational programming skills I have learned from this project are, in a way, so foundational that they have shaped and will continue to shape how I approach problems as an
 engineer.
+
+
+The project features 
+
+
+
+
+
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

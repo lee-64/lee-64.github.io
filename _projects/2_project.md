@@ -1,12 +1,56 @@
 ---
 layout: page
-title: project 2
+title: Skincare Routine Manager
 description: a project with a background image and giscus comments
 img: assets/img/3.jpg
 importance: 2
-category: work
+category: personal
 giscus_comments: true
 ---
+
+
+Skincare has [exploded in popularity](https://trends.google.com/trends/explore?date=all&q=skincare&hl=en) in recent years. People want to treat
+their skin well, which is great! However, the market is extremely saturated; an unnavigable volume of brands and products cover your pharmacy shelves, your favorite
+influencer just announced their very own skincare product line, and unrealistic beauty standards tie this all together by making regular people feel like they
+need to splurge on the trendiest snake oil serum to get the immediate results they're hoping for.
+
+The skincare industry is worth an estimated [$180.3 billion](https://www.statista.com/forecasts/1268473/worldwide-revenue-skin-care-market#:~:text=This%20statistic%20depicts%20the%20estimated,be%20189.3%20billion%20U.S.%20dollars.) globally--there is no changing the market's over-saturation. 
+However, I have identified and provided a solution for the average consumer overwhelmed by choice:
+
+A single skincare product typically specializes in one component of a routine, such as moisturizing or cleansing. However, customers' skincare routines are rarely just one, standalone product.
+Many customers have lengthy, multi-step skincare routines with many different products to juggle and keep straight. 
+
+Sometimes products might negatively react when used alongside another, actually worsening your skin. Or, there might be a missed opportunity for a synergy between products in a routine,
+saving the customer money on unnecessary extra steps.
+
+My Skincare Routine Manager project provides users with the data-driven insights behind their routine, highlighting conflicts between known conflicting ingredients, like benzoyl peroxide and retinol, and
+illustrating synergies between proven ingredient pairings, such as AHAs and BHAs.
+
+
+
+
+
+I any, differentiated 
+
+Many skincare products are 
+
+
+However, the frustration stemming from the sheer volume of skincare brands and products, many of which market themselves as the "cure-all" for
+your skin problems, led me to identify following problems:
+1. It is impossibl
+2. Treatments are very often used alongside other products. It is very difficult for customers to recognize
+
+
+The skincare industry is worth an estimated 
+
+With a monumental rise in demand comes an unnavigable sea of products and brands claiming to be your skin's magic solution.
+this highlights two major points: there are countless snake oil salesmen 
+
+
+I was tired of not knowing what face lotion to get at the store. I was tired of
+purchasing expensive 
+
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
