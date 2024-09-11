@@ -1,6 +1,6 @@
 ---
 layout: page
-title: project 1
+title: Interactive Music Analytics
 description: with background image
 img: assets/img/12.jpg
 importance: 1
@@ -28,7 +28,7 @@ testing
       <pre>
       <code>
 ├── interactive_music_analytics/
-│   ├── app.py
+│   ├── <strong>app.py</strong>
 │   ├── csv_to_db.py
 │   ├── templates/
 │   │   ├── ...
@@ -39,10 +39,10 @@ testing
       <pre>
       <code>
 ├── interactive_music_analytics/
-│   ├── __init__.py
-│   ├── artist_metrics.py
+│   ├── <strong>__init__.py</strong>
+│   ├── <strong>artist_metrics.py</strong>
 │   ├── config.py
-│   ├── dbhelper.py
+│   ├── <strong>dbhelper.py</strong>
 │   ├── blog.py
 │   ├── templates/
 │   │   ├── ...

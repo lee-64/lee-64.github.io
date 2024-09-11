@@ -1,12 +1,13 @@
 ---
 layout: page
-title: project 3 with very long name
+title: DJ Recommendation Engine
 description: a project that redirects to another website
 img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+importance: 1
+category: personal
 ---
+
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.

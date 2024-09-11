@@ -15,19 +15,31 @@ influencer just announced their very own skincare product line, and unrealistic 
 need to splurge on the trendiest snake oil serum to get the immediate results they're hoping for.
 
 The skincare industry is worth an estimated [$180.3 billion](https://www.statista.com/forecasts/1268473/worldwide-revenue-skin-care-market#:~:text=This%20statistic%20depicts%20the%20estimated,be%20189.3%20billion%20U.S.%20dollars.) globally--there is no changing the market's over-saturation. 
-However, I have identified and provided a solution for the average consumer overwhelmed by choice:
+However, I have identified and provided a solution for the average consumer overwhelmed by choice.
 
-A single skincare product typically specializes in one component of a routine, such as moisturizing or cleansing. However, customers' skincare routines are rarely just one, standalone product.
+### The problem:
+>A single skincare product typically specializes in one component of a routine, such as moisturizing or cleansing. However, customers' skincare routines are rarely just one, standalone product.
 Many customers have lengthy, multi-step skincare routines with many different products to juggle and keep straight. 
-
-Sometimes products might negatively react when used alongside another, actually worsening your skin. Or, there might be a missed opportunity for a synergy between products in a routine,
+>
+>Sometimes products might negatively react when used alongside another, actually worsening your skin. Or, there might be a missed opportunity for a synergy between products in a routine,
 saving the customer money on unnecessary extra steps.
 
-My Skincare Routine Manager project provides users with the data-driven insights behind their routine, highlighting conflicts between known conflicting ingredients, like benzoyl peroxide and retinol, and
+### The solution:
+>My Skincare Routine Manager project provides users with the data-driven insights behind their routine, highlighting conflicts between known conflicting ingredients, like benzoyl peroxide and retinol, and
 illustrating synergies between proven ingredient pairings, such as AHAs and BHAs.
 
 
-
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/skincare_conflicts.png" title="conflicts" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/skincare_synergies.png" title="synergies" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Routine conflicts (left) and synergies (right) network visualizations using Plotly's <a href="https://github.com/plotly/dash-cytoscape">Dash Cytoscape</a>. 
+</div>
 
 
 I any, differentiated 
@@ -49,6 +61,8 @@ this highlights two major points: there are countless snake oil salesmen
 
 I was tired of not knowing what face lotion to get at the store. I was tired of
 purchasing expensive 
+
+
 
 
 
