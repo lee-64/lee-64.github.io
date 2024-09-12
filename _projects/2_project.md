@@ -31,10 +31,10 @@ illustrating synergies between proven ingredient pairings, such as AHAs and BHAs
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/skincare_conflicts.png" title="conflicts" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/skincare_conflicts.png" title="Conflicts" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/skincare_synergies.png" title="synergies" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/skincare_synergies.png" title="Synergies" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -42,25 +42,32 @@ illustrating synergies between proven ingredient pairings, such as AHAs and BHAs
 </div>
 
 
-I any, differentiated 
-
-Many skincare products are 
 
 
-However, the frustration stemming from the sheer volume of skincare brands and products, many of which market themselves as the "cure-all" for
-your skin problems, led me to identify following problems:
-1. It is impossibl
-2. Treatments are very often used alongside other products. It is very difficult for customers to recognize
+This visualization highlights links between active ingredients within products that either contradict (or pair well, if the synergy option is selected) with other ingredients in the routine.
+Each node is a product within the user's routine, and the color of that node gets more intense the more links to other nodes it has. The edges between the nodes are directional, pointing outwards 
+from the product that specific ingredient came from. That's why there are two links connecting products; one for each ingredient of the conflict (or synergy) pairing.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/skincare_cytoscape_zoom.png" title="Conflict" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Nodes are products and directional edges are ingredients, each stemming from one of the products in the pairing.
+</div>
 
 
-The skincare industry is worth an estimated 
+This project was (and continues to be) an incredibly valuable learning experience for me. It's built on Flask, iterating on the Flask techniques I've implemented
+in prior projects. It has a more sophisticated account creation, sign in, and session-management functionality than I've previously worked with, powered by the Python SQLite library.
+Developing the routine manager tool had the steepest learning curve of this whole project. I taught myself basic Javascript to create the dynamic routine manager, fully organizable by the user,
+and equipped with product name autofill capabilities. I'm particularly proud of how the routine manager feature turned out.
 
-With a monumental rise in demand comes an unnavigable sea of products and brands claiming to be your skin's magic solution.
-this highlights two major points: there are countless snake oil salesmen 
-
-
-I was tired of not knowing what face lotion to get at the store. I was tired of
-purchasing expensive 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/skincare_edit_routine.png" title="Conflict" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 
 
