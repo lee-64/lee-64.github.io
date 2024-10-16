@@ -21,7 +21,7 @@ There are three primary goals of this app:
 
 Once the app is approved by Spotify for a user extension request, the DJ Recommendation Engine will be advertised as a starting point for new listeners. This will draw in new users
 who wish to see how their music taste stacks up against those in the radio station. Additionally, a system that matches by music taste is a novel practice--there are no other university
-radio stations that have a feature like this. 
+radio stations that have a feature like this.
 
 Users of this app are also more likely to stick around and for longer. I suspect a demonstrable increase in listener retention, for this service gives users an immediate starting point
 for which DJ, out of our ~70 DJs, they are most likely to enjoy. As a once first-time KXSC listener, I found the number and variety of DJs overwhelming and unnavigable. With over
@@ -41,14 +41,12 @@ viable DJ-intern pairings (*purely based on music taste*) are given. The intern-
 and fit is something I will not claim my project can do. Rather, my project speeds up specifically one metric of the matching process, that being music preference similarity. My project
 assists in one aspect of the Intern Program's holistic review process.
 
-
 This project builds on everything I learned while coding the [Spotify Insights Hub](https://lee-64.github.io/projects/1_project/) for my Applied Python course. I also learned a lot while 
 developing this project. I've learned the ins-and-outs of Spotify's API while sifting through the verbose data structures that come with its API calls. Moreover, I worked with callback
 functions and managing user authorization/permissions beyond simple login/logout functionality. The Spotify OAuth process, using client credentials and access tokens, exposed me to an
 entirely new space of user<-->app<-->server frameworks that grant applications protected resources. Ultimately, implementing this feature allows the user to one-click sign in with Spotify, a 
 functionality that many modern websites utilize when you click buttons like "Sign in with Google". I believe that Spotify's API is a fantastic API to begin learning with because of its 
 extensive documentation and the daily relevance of Spotify's services.
-
 
 I received more exposure to statistical similarity techniques via this project too. When comparing the user's feature data arrays with each DJ's arrays, I opted for calculating angular distance
 instead of cosine distance as my similarity metric--very similar to the approach applied in Google's [Universal Sentence Encoder](https://arxiv.org/abs/1803.11175) paper. I found that with cosine similarity, 
