@@ -71,5 +71,3 @@ and equipped with product name autofill capabilities. I'm particularly proud of 
 <div class="caption">
     Draggable and customizable sections and products using JavaScript library <a href="https://jqueryui.com">jQuery</a>.
 </div>
-
-{% endraw %}
