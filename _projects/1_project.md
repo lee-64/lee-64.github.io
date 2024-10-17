@@ -14,8 +14,8 @@ and deployment-ready as I could using the material I had learned thus far in the
 
 To begin, I created a _simple_ (or, at the time, what I thought would be simple) Flask framework of throwing every application function and route in one Python file.
 I quickly abandoned this project structure after 300+ lines of routes pointing every which way in the long, vertical column that was my codespace.
-Rather, I explored the [Flask documentation](https://flask.palletsprojects.com/en/3.0.x/) and taught myself about the common practice of building your Flask app
-around an _application factory_. The most valuable Flask webdev technique I learned here was that of [Blueprints](https://flask.palletsprojects.com/en/3.0.x/blueprints/).
+Rather, I explored the <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask documentation</a> and taught myself about the common practice of building your Flask app
+around an _application factory_. The most valuable Flask webdev technique I learned here was that of <a href="https://flask.palletsprojects.com/en/3.0.x/blueprints/">Blueprints</a>.
 Modular application design helped me continue beefing up my project by staying organized (and I'm sure helped my professor grade it). Here is how my
 project structure changed:
 

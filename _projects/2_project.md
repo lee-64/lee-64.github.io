@@ -9,12 +9,13 @@ giscus_comments: true
 ---
 
 
-Skincare has [exploded in popularity](https://trends.google.com/trends/explore?date=all&q=skincare&hl=en) in recent years. People want to treat
+Skincare has <a href="https://trends.google.com/trends/explore?date=all&q=skincare&hl=en">exploded in popularity</a> in recent years. People want to treat
 their skin well, which is great! However, the market is extremely saturated; an unnavigable volume of brands and products cover your pharmacy shelves, your favorite
 influencer just announced their very own skincare product line, and unrealistic beauty standards tie this all together by making regular people feel like they
 need to splurge on the trendiest snake oil serum to get the immediate results they're hoping for.
 
-The skincare industry is worth an estimated [$180.3 billion](https://www.statista.com/forecasts/1268473/worldwide-revenue-skin-care-market#:~:text=This%20statistic%20depicts%20the%20estimated,be%20189.3%20billion%20U.S.%20dollars.) globally--there is no changing the market's over-saturation. 
+The skincare industry is worth an estimated <a href="https://www.statista.com/forecasts/1268473/worldwide-revenue-skin-care-market#:~:text=This%20statistic%20depicts%20the%20estimated,be%20189.3%20billion%20U.S.%20dollars.">$180.3 billion</a>
+globally--there is no changing the market's over-saturation. 
 However, I have identified and provided a solution for the average consumer overwhelmed by choice.
 
 ### The problem:

@@ -22,7 +22,7 @@ My passion for data science and machine learning in a business context centers a
 - enable me to apply new skills, 
 - and offer data-driven, at a glance insights for otherwise convoluted situational constraints
 
-such as my [DJ Recommendation Engine](https://lee-64.github.io/projects/1_project/) and my [Skincare Routine Manager](https://lee-64.github.io/projects/1_project/).
+such as my [DJ Recommendation Engine](https://lee-64.github.io/projects/3_project/) and my [Skincare Routine Manager](https://lee-64.github.io/projects/2_project/).
 
 
 

@@ -12,7 +12,7 @@ about music, so I was very pleased to meet so many likeminded peers. I also had 
 I have released since beginning at the station is the DJ Recommendation Engine.
 
 The DJ Recommendation Engine is a web app that calculates a user's **most similar**, active KXSC DJ based off of key audio features from tracks in your Spotify library and the number
-of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app [here](kxsc.pythonanywhere.com/demo) or at [kxsc.pythonanywhere.com/demo](kxsc.pythonanywhere.com/demo).
+of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app <a href="kxsc.pythonanywhere.com/demo">here</a> or at <a href="kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>.
 
 There are three primary goals of this app:
 >1. Grow KXSC's reach by acquiring new listeners
@@ -67,7 +67,7 @@ extensive documentation and the daily relevance of Spotify's services.
 </div>
 
 I received more exposure to statistical similarity techniques via this project too. When comparing the user's feature data arrays with each DJ's arrays, I opted for calculating angular distance
-instead of cosine distance as my similarity metric--very similar to the approach applied in Google's [Universal Sentence Encoder](https://arxiv.org/abs/1803.11175) paper. I found that with cosine similarity, 
+instead of cosine distance as my similarity metric--very similar to the approach applied in Google's <a href="https://arxiv.org/abs/1803.11175">Universal Sentence Encoder</a> paper. I found that with cosine similarity, 
 many of the greatest similarity values were all bunched together towards the upper-end (0.90<), losing precision. This is because the multi-dimensional feature vectors corresponding to DJs were nearly parallel. 
 I suspect this is due to how similar some DJs' music tastes are when averaged out. Small angle differences when using cosine similarity produce nearly identical similarity values, as seen by how the cosine similarity 
 line flattens out for high similarity, small angle values on the right plot below. Angular similarity, on the other hand, is much better at distinguishing nearly parallel vectors. This is visible in the left plot below, 
@@ -92,4 +92,4 @@ The similarity values are then weighted with the number of song and artist match
 if the user doesn't recognize anything from the DJ's catalog. I found that some overlap makes a user much more likely to want to tune in to that DJ's set because they can expect some of their favorite songs and artists 
 to be played. Musical common ground with recognizable names is much more valuable to humans who don't see songs as an array of feature values.
 
-A demo of the DJ Recommendation Engine is viewable at [kxsc.pythonanywhere.com/demo](kxsc.pythonanywhere.com/demo).
+A demo of the DJ Recommendation Engine is viewable at <a href="kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>.
