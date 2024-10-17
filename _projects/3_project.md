@@ -15,9 +15,9 @@ The DJ Recommendation Engine is a web app that calculates a user's **most simila
 of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app [here](kxsc.pythonanywhere.com/demo) or at [kxsc.pythonanywhere.com/demo](kxsc.pythonanywhere.com/demo).
 
 There are three primary goals of this app:
-1. Grow KXSC's reach by acquiring new listeners
-2. Increase listener retention
-3. Expedite the intern pairing process for KXSC's Intern Program
+>1. Grow KXSC's reach by acquiring new listeners
+>2. Increase listener retention
+>3. Expedite the intern pairing process for KXSC's Intern Program
 
 Once the app is approved by Spotify for a user extension request, the DJ Recommendation Engine will be advertised as a starting point for new listeners. This will draw in new users
 who wish to see how their music taste stacks up against those in the radio station. Additionally, a system that matches by music taste is a novel practice--there are no other university
@@ -27,6 +27,15 @@ Users of this app are also more likely to stick around and for longer. I suspect
 for which DJ, out of our ~70 DJs, they are most likely to enjoy. As a once first-time KXSC listener, I found the number and variety of DJs overwhelming and unnavigable. With over
 70 hours of programming each week, it is unrealistic and unlikely a user finds the DJ that will get them to come back each week. I believe my program solves a first-time listener's
 desire for a quick and easy starting point, increasing the chances that they come back for their matched-DJ's set each and every week.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/kxsc_sem1_schedule.png" title="KXSC Schedule" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The weekly DJ schedule, consisting of approximately 70 DJs. It can be overwhelming for a first-time listener to know where to start. Side note: Check out my set at 12pm every Monday!
+</div>
 
 I recognize that a matching system can lead to recommendations that are *too similar* to the user. For example, a user might have most of a DJ's catalog already in their library, thus
 rendering a match with them unhelpful/without anything new to present to the user. However, I argue that a 'too similar' match is not a downside in this case; DJs play new songs every
@@ -48,6 +57,15 @@ entirely new space of user<-->app<-->server frameworks that grant applications p
 functionality that many modern websites utilize when you click buttons like "Sign in with Google". I believe that Spotify's API is a fantastic API to begin learning with because of its 
 extensive documentation and the daily relevance of Spotify's services.
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/spotify_api_call.png" title="A sample Spotify API call" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    A sample Spotify audio features API call and response.
+</div>
+
 I received more exposure to statistical similarity techniques via this project too. When comparing the user's feature data arrays with each DJ's arrays, I opted for calculating angular distance
 instead of cosine distance as my similarity metric--very similar to the approach applied in Google's [Universal Sentence Encoder](https://arxiv.org/abs/1803.11175) paper. I found that with cosine similarity, 
 many of the greatest similarity values were all bunched together towards the upper-end (0.90<), losing precision. This is because the multi-dimensional feature vectors corresponding to DJs were nearly parallel. 
@@ -55,11 +73,15 @@ I suspect this is due to how similar some DJs' music tastes are when averaged ou
 line flattens out for high similarity, small angle values on the right plot below. Angular similarity, on the other hand, is much better at distinguishing nearly parallel vectors. This is visible in the left plot below, 
 where small changes in cosine values near x=1 yield a greater difference in similarity values. The transformation was calculated like so:
 
-$$ \text{angular\_similarity} = 1 - \frac{\arccos(\text{cosine\_similarity})}{\pi} $$
+$$ 
+\begin{align}
+\text{angular similarity} = 1 - \frac{\arccos(\text{cosine similarity})}{\pi} 
+\end{align}
+$$
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/sim_curves.jpg" title="Conflicts" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/sim_curves.jpg" title="Cosine vs. Angular Distance Curves" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
