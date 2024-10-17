@@ -23,7 +23,3 @@ My passion for data science and machine learning in a business context centers a
 - and offer data-driven, at a glance insights for otherwise convoluted situational constraints
 
 such as my [DJ Recommendation Engine](https://lee-64.github.io/projects/3_project/) and my [Skincare Routine Manager](https://lee-64.github.io/projects/2_project/).
-
-
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.

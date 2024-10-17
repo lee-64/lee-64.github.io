@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Projects I'm proud of
+description:
 nav: true
 nav_order: 1
 display_categories: [personal, university]
