@@ -2,10 +2,10 @@
 layout: page
 title: Interactive Music Analytics
 description: with background image
-img: assets/img/12.jpg
+img: assets/img/1.jpg
 importance: 1
 category: university
-related_publications: true
+related_publications: false
 ---
 
 I created the **_Spotify Insights Hub_** for my final project of the ITP-216 **Applied Python** course. Creating this interactive data

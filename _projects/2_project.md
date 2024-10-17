@@ -5,7 +5,7 @@ description: An interactive skincare routine website that visualizes the nuanced
 img: assets/img/3.jpg
 importance: 2
 category: personal
-giscus_comments: true
+giscus_comments: false
 ---
 
 

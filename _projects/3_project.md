@@ -2,7 +2,7 @@
 layout: page
 title: DJ Recommendation Engine
 description: Connect your Spotify library to find which KXSC DJ is most statistically similar to your music taste.
-img: assets/img/7.jpg
+img: assets/img/kxsc_logo_project_thumbnail.jpg
 importance: 1
 category: personal
 ---
