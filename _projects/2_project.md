@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Skincare Routine Manager
-description: An interactive skincare routine website that visualizes the nuanced interactions between products.
+description: An interactive skincare routine website that visualizes the nuanced interactions between products
 img: assets/img/3.jpg
 importance: 2
 category: personal

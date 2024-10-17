@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DJ Recommendation Engine
-description: Connect your Spotify library to find which KXSC DJ is most statistically similar to your music taste.
+description: Connect your Spotify library to find which KXSC DJ is most statistically similar to your music taste
 img: assets/img/kxsc_logo_project_thumbnail.jpg
 importance: 1
 category: personal
@@ -12,7 +12,7 @@ about music, so I was very pleased to meet so many likeminded peers. I also had 
 I have released since beginning at the station is the DJ Recommendation Engine.
 
 The DJ Recommendation Engine is a web app that calculates a user's **most similar**, active KXSC DJ based off of key audio features from tracks in your Spotify library and the number
-of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app <a href="kxsc.pythonanywhere.com/demo">here</a> or at <a href="kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>.
+of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app <a href="https://kxsc.pythonanywhere.com/demo">here</a> or at <a href="https://kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>.
 
 There are three primary goals of this app:
 >1. Grow KXSC's reach by acquiring new listeners
@@ -92,4 +92,4 @@ The similarity values are then weighted with the number of song and artist match
 if the user doesn't recognize anything from the DJ's catalog. I found that some overlap makes a user much more likely to want to tune in to that DJ's set because they can expect some of their favorite songs and artists 
 to be played. Musical common ground with recognizable names is much more valuable to humans who don't see songs as an array of feature values.
 
-A demo of the DJ Recommendation Engine is viewable at <a href="kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>.
+A demo of the DJ Recommendation Engine is viewable at <a href="https://kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>.

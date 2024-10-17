@@ -1,9 +1,9 @@
 ---
 layout: page
-permalink: /teaching/
+permalink: /natlparks/
 title: nat'l parks
 description: U.S. National Parks I've been to!
-nav: false
+nav: true
 nav_order: 3
 ---
 
