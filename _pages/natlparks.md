@@ -11,12 +11,14 @@ nav_order: 3
 
 
 <br>
-All of the National Parks are amazing (except you, Petrified Forest), but in no particular order here are my favorites so far:
+All of the National Parks are amazing (except you, Petrified Forest), but here are my favorites so far:
 
-Olympic,
-Zion,
-Arches,
-Glacier,
-Crater Lake,
-Rocky Mountain,
-Denali
+- Olympic
+- Zion
+- Arches
+- Glacier
+- Crater Lake
+- Rocky Mountain
+- Denali
+
+_(in no particular order)_

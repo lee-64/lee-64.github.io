@@ -79,6 +79,8 @@ $$
 \end{align}
 $$
 
+<br>
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/sim_curves.jpg" title="Cosine vs. Angular Distance Curves" class="img-fluid rounded z-depth-1" %}
