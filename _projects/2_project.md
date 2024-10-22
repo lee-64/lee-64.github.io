@@ -2,7 +2,7 @@
 layout: page
 title: Skincare Routine Manager
 description: An interactive skincare routine website that visualizes the nuanced interactions between products
-img: assets/img/3.jpg
+img: assets/img/skincare_project_thumbnail.jpg
 importance: 2
 category: personal
 giscus_comments: false
@@ -49,6 +49,7 @@ This visualization highlights links between active ingredients within products t
 Each node is a product within the user's routine, and the color of that node gets more intense the more links to other nodes it has. The edges between the nodes are directional, pointing outwards 
 from the product that specific ingredient came from. That's why there are two links connecting products; one for each ingredient of the conflict (or synergy) pairing.
 
+<br/>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/skincare_cytoscape_zoom.png" title="Conflict" class="img-fluid rounded z-depth-1" %}
@@ -64,6 +65,7 @@ in prior projects. It has a more sophisticated account creation, sign in, and se
 Developing the routine manager tool had the steepest learning curve of this whole project. I taught myself basic Javascript to create the dynamic routine manager, fully organizable by the user,
 and equipped with product name autofill capabilities. I'm particularly proud of how the routine manager feature turned out.
 
+<br/>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/skincare_edit_routine.png" title="Editing Routine" class="img-fluid rounded z-depth-1" %}

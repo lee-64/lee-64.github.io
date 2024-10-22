@@ -28,6 +28,7 @@ for which DJ, out of our ~70 DJs, they are most likely to enjoy. As a once first
 70 hours of programming each week, it is unrealistic and unlikely a user finds the DJ that will get them to come back each week. I believe my program solves a first-time listener's
 desire for a quick and easy starting point, increasing the chances that they come back for their matched-DJ's set each and every week.
 
+<br/>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/kxsc_sem1_schedule.png" title="KXSC Schedule" class="img-fluid rounded z-depth-1" %}
@@ -57,6 +58,7 @@ entirely new space of user<-->app<-->server frameworks that grant applications p
 functionality that many modern websites utilize when you click buttons like "Sign in with Google". I believe that Spotify's API is a fantastic API to begin learning with because of its 
 extensive documentation and the daily relevance of Spotify's services.
 
+<br/>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/spotify_api_call.png" title="A sample Spotify API call" class="img-fluid rounded z-depth-1" %}

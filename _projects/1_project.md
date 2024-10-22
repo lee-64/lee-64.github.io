@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Interactive Music Analytics
-description: with background image
+title: Spotify Insights Hub
+description: An interactive music analytics dashboard
 img: assets/img/1.jpg
 importance: 1
 category: university
@@ -42,8 +42,9 @@ testing
 │   ├── <strong>__init__.py</strong>
 │   ├── <strong>artist_metrics.py</strong>
 │   ├── config.py
-│   ├── <strong>dbhelper.py</strong>
-│   ├── blog.py
+│   ├── dbhelper.py
+│   ├── static/
+│   │   ├── ...
 │   ├── templates/
 │   │   ├── ...
       </code>
@@ -61,82 +62,29 @@ The organizational programming skills I have learned from this project are, in a
 engineer.
 
 
-The project features 
+The project features an artist comparison tool that generates an overlapping bar chart of two artists' average audio features using Matplotlib.
+When a user inputs an artist's name, the app queries the Spotify data database to retrieve relevant statistics such as danceability, energy, acousticness, instrumentalness, and valence. 
+These metrics are then visualized to provide a comparison of the artists' musical style.
 
+<img>
+<caption>UI/UX was outside the scope of this project. Enjoy the data visualizations and similarity insights instead!</caption>
 
+Switching gears, the project also features a "perfect song" feature (which inspired my [DJ Recommendation Engine](https://lee-64.github.io/projects/3_project/)). Login functionality and
+account creation functionality involves dynamic database queries and insertions, as well as session management--the part I found I worked with the most. I utilized Flask's session management
+and SQLite for user database management. After logging in, users can input their preferences for various musical attributes using interactive sliders. 
+The app then employs a K-Nearest Neighbors (KNN) algorithm from scikit-learn to identify the cluster of songs from the Spotify dataset that best matches the user's specified criteria. 
+A clustering algorithm such as KNN is computationally inefficient when only a single best match is needed and for such basic numerical feature vectors as inputs. In the future, I would opt for
+a similarity method like cosine similarity as a more efficient approach for such problems. Regardless, KNN still correctly predicts the user's "perfect song."
 
+<img>
 
+Embarking on this project was not without its hurdles. Initially, managing all routes and functionalities within a single Python file became cumbersome as the project grew. Transitioning to a 
+modular application structure using Blueprints was a game-changer, allowing me to compartmentalize different sections of the app and maintain a cleaner codebase.
 
+Another challenge was optimizing the performance of data queries and visualizations. By leveraging Pandas for data manipulation and Matplotlib for plotting, I was able to efficiently handle 
+large datasets and generate real-time visual feedback for users. Additionally, ensuring secure user authentication and session management required meticulous attention to detail, especially 
+when handling sensitive information like passwords.
 
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+This project was a significant learning experience that honed my skills in web development, data analytics, and machine learning. It not only solidified my passion for data-driven applications
+(Take a look at my other projects! I love making interactive dashboards.) but also equipped me with the skills and confidence to tackle more complex challenges in the realm of web development and 
+data science. I'm eager to bring this blend of creativity and technical expertise to future endeavors, and I believe the Spotify Insights Hub is a testament to what I can achieve.
