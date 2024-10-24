@@ -2,7 +2,7 @@
 layout: page
 title: Spotify Insights Hub
 description: An interactive music analytics dashboard
-img: assets/img/1.jpg
+img: assets/img/spotify_logo.png
 importance: 1
 category: university
 related_publications: false
@@ -66,8 +66,14 @@ The project features an artist comparison tool that generates an overlapping bar
 When a user inputs an artist's name, the app queries the Spotify data database to retrieve relevant statistics such as danceability, energy, acousticness, instrumentalness, and valence. 
 These metrics are then visualized to provide a comparison of the artists' musical style.
 
-<img>
-<caption>UI/UX was outside the scope of this project. Enjoy the data visualizations and similarity insights instead!</caption>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/artist_compare_histo.png" title="Artist Comparison" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    UI/UX was outside the scope of this project. Enjoy the data visualizations and similarity insights instead! :)
+</div>
 
 Switching gears, the project also features a "perfect song" feature (which inspired my [DJ Recommendation Engine](https://lee-64.github.io/projects/3_project/)). Login functionality and
 account creation functionality involves dynamic database queries and insertions, as well as session management--the part I found I worked with the most. I utilized Flask's session management
@@ -76,7 +82,17 @@ The app then employs a K-Nearest Neighbors (KNN) algorithm from scikit-learn to 
 A clustering algorithm such as KNN is computationally inefficient when only a single best match is needed and for such basic numerical feature vectors as inputs. In the future, I would opt for
 a similarity method like cosine similarity as a more efficient approach for such problems. Regardless, KNN still correctly predicts the user's "perfect song."
 
-<img>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/perf_song_sliders.png" title="Perfect Song Sliders" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/user_vs_perf_song.png" title="Perfect Song Comparison" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The user's "perfect song" match is their most similar song selected out of 20,000 tracks across these five metrics.
+</div>
 
 Embarking on this project was not without its hurdles. Initially, managing all routes and functionalities within a single Python file became cumbersome as the project grew. Transitioning to a 
 modular application structure using Blueprints was a game-changer, allowing me to compartmentalize different sections of the app and maintain a cleaner codebase.
