@@ -72,7 +72,7 @@ These metrics are then visualized to provide a comparison of the artists' musica
     </div>
 </div>
 <div class="caption">
-    UI/UX was outside the scope of this project. Enjoy the data visualizations and similarity insights instead! :)
+    UI was outside the scope of this project. Enjoy the data visualizations and similarity insights instead! :)
 </div>
 
 Switching gears, the project also features a "perfect song" feature (which inspired my [DJ Recommendation Engine](https://lee-64.github.io/projects/3_project/)). Login functionality and

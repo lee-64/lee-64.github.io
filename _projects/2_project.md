@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Skincare Routine Manager
-description: An interactive skincare routine website that visualizes the nuanced interactions between products
+description: An interactive skincare routine website
 img: assets/img/skincare_project_thumbnail.jpg
 importance: 2
 category: personal
@@ -74,3 +74,12 @@ and equipped with product name autofill capabilities. I'm particularly proud of 
 <div class="caption">
     Draggable and customizable sections and products using JavaScript library <a href="https://jqueryui.com">jQuery</a>.
 </div>
+
+I also practiced reading over code documentation a LOT while developing this project. I know the Python Plotly library practically inside and out at this point. I nested Plotly's Dash framework for building
+standalone data apps within my Flask application, which took a lot of tinkering. I needed to optimize the Dash app to run only when "launched" by visiting the insights page, rather than booting up in parallel
+(and in the background) with the rest of the app. Then comes the Plotly Cytoscape component which I used for graph visualization. I had some pretty complicated requirements for how I wanted the product insights
+visualization to look. With few resources outside the documentation (given a library component as niche as Cytoscape), I relied extensively on it for tweaking the appearance, labels, color-scaling, how nodes connect, 
+etc. ChatGPT had no clue how to do anything of this. By pouring into the obscurities of callback function parameters and node networks, I felt like a true engineer.
+
+The end result is something I'm proud of, yet will continue to add features to and refine. I use this project whenever I investigate a new skincare product, highlighting the effectiveness with which it would integrate 
+with the rest of my pre-existing routine. Throughout this process, I have picked up a lot of very valuable skills for future interactive data visualization projects that I'm incredibly eager to apply further.
