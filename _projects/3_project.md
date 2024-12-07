@@ -12,7 +12,19 @@ about music, so I was very pleased to meet so many likeminded peers. I also had 
 I have released since beginning at the station is the DJ Recommendation Engine.
 
 The DJ Recommendation Engine is a web app that calculates a user's **most similar**, active KXSC DJ based off of key audio features from tracks in your Spotify library and the number
-of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app <a href="https://kxsc.pythonanywhere.com/demo">here</a> or at <a href="https://kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>.
+of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app <a href="https://kxsc.pythonanywhere.com/demo">here</a>, at <a href="https://kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>,
+or the in the video below.
+
+<br/>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/video_demo.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+    </div>
+</div>
+<div class="caption">
+    A video demo of the DJ Recommendation Engine, as would be used by a user.
+</div>
+
 
 There are three primary goals of this app:
 >1. Grow KXSC's reach by acquiring new listeners
