@@ -7,6 +7,12 @@ importance: 1
 category: personal
 ---
 
+> Update:
+> At the end of 2024, <a href="https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api">Spotify suddenly revoked access for many of their API endpoints</a> (much to the <a href="https://community.spotify.com/t5/Spotify-for-Developers/Changes-to-Web-API/td-p/6540414">frustration</a> of the developer community). Endpoints like `GET /audio-features/{id}` which were heavily leveraged in this application are now completely inaccessible.
+> I have pivoted to a (similarly effective) solution utilizing music metadata from <a href="https://acousticbrainz.org">AcousticBrainz</a> and <a href="https://musicbrainz.org">MusicBrainz</a>. I have also significantly improved the UI/UX, website accessibility, hosting services (<a href="https://vercel.com/">Vercel</a> front-end and <a href="https://render.com">Render</a> back-end), and added more personalization features across the matching process.
+> A demo of the newest iteration of KXSC DJ Match is viewable <a href="https://kxsc-dj-match.vercel.app/results">here</a>. Please check it out! Additionally, here is the <a href="https://github.com/lee-64/kxsc_dj_match">GitHub repository</a>.
+
+
 I joined KXSC Radio, the student-run radio station of the University of Southern California, as a DJ intern in January 2024. I have always loved listening to music and talking
 about music, so I was very pleased to meet so many likeminded peers. I also had big ideas for reworking and modernizing KXSC's services using my data science skills. The first project 
 I have released since beginning at the station is the DJ Recommendation Engine.
