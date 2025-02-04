@@ -1,21 +1,24 @@
 ---
 layout: page
 title: DJ Recommendation Engine
-description: Connect your Spotify library to find which KXSC DJ is most statistically similar to your music taste
+description: Match with the KXSC DJ most statistically similar to your music taste
 img: assets/img/kxsc_logo_project_thumbnail.jpg
 importance: 1
 category: personal
 ---
 
+### [KXSC DJ Match](https://kxsc-dj-match.vercel.app) <svg style="position: relative; top: 2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+
 > Update:
-> At the end of 2024, <a href="https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api">Spotify suddenly revoked access for many of their API endpoints</a> (much to the <a href="https://community.spotify.com/t5/Spotify-for-Developers/Changes-to-Web-API/td-p/6540414">frustration</a> of the developer community). Endpoints like `GET /audio-features/{id}` which were heavily leveraged in this application are now completely inaccessible.
-> I have pivoted to a (similarly effective) solution utilizing music metadata from <a href="https://acousticbrainz.org">AcousticBrainz</a> and <a href="https://musicbrainz.org">MusicBrainz</a>. I have also significantly improved the UI/UX, website accessibility, hosting services (<a href="https://vercel.com/">Vercel</a> front-end and <a href="https://render.com">Render</a> back-end), and added more personalization features across the matching process.
+> At the end of 2024, <a href="https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api">Spotify revoked access for many of their API endpoints</a>. Endpoints like `GET /audio-features/{id}` which were heavily leveraged in this application are now inaccessible.
+> 
+> No worries at all! I have pivoted to a (similarly effective) solution that combines open-source music metadata from <a href="https://acousticbrainz.org">AcousticBrainz</a> and <a href="https://musicbrainz.org">MusicBrainz</a> with Spotify's API for track searches, popularity metrics, and artists' top songs. I have also significantly improved the UI/UX, website accessibility, hosting services (<a href="https://vercel.com/">Vercel</a> front-end and <a href="https://render.com">Render</a> back-end), and added more personalization features across the matching process.
 > A demo of the newest iteration of KXSC DJ Match is viewable <a href="https://kxsc-dj-match.vercel.app">here</a>. Please check it out! Additionally, here is the <a href="https://github.com/lee-64/kxsc_dj_match">GitHub repository</a>.
 
 
-I joined KXSC Radio, the student-run radio station of the University of Southern California, as a DJ intern in January 2024. I have always loved listening to music and talking
+I joined [KXSC Radio](https://kxsc.org/), the student-run radio station of the University of Southern California, as a DJ intern in January 2024. I have always loved listening to music and talking
 about music, so I was very pleased to meet so many likeminded peers. I also had big ideas for reworking and modernizing KXSC's services using my data science skills. The first project 
-I have released since beginning at the station is the DJ Recommendation Engine.
+I have released since beginning at the station is the DJ Recommendation Engine, also dubbed KXSC DJ Match, which I'm proud to showcase here.
 
 The DJ Recommendation Engine is a web app that calculates a user's **most similar**, active KXSC DJ based off of key audio features from tracks in your Spotify library and the number
 of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app <a href="https://kxsc.pythonanywhere.com/demo">here</a>, at <a href="https://kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>,
