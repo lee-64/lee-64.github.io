@@ -20,34 +20,47 @@ I joined [KXSC Radio](https://kxsc.org/), the student-run radio station of the U
 about music, so I was very pleased to meet so many likeminded peers. I also had big ideas for reworking and modernizing KXSC's services using my data science skills. The first project 
 I have released since beginning at the station is the DJ Recommendation Engine, also dubbed KXSC DJ Match, which I'm proud to showcase here.
 
-The DJ Recommendation Engine is a web app that calculates a user's **most similar**, active KXSC DJ based off of key audio features from tracks in your Spotify library and the number
-of tracks/artists from your playlists and Liked Songs you have in common. You can view a demo of the web app <a href="https://kxsc.pythonanywhere.com/demo">here</a>, at <a href="https://kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>,
-or the in the video below.
+The DJ Recommendation Engine is a web app that calculates a user's **most similar**, active KXSC DJ based off of key audio features from the user's favorite artists, desired music mood, and the frequency of artists you have in common. 
+You can view a demo of the web app <a href="https://kxsc-dj-match.vercel.app">here</a> or in the video below.
 
 <br/>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/video_demo.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+        {% include video.liquid path="assets/video/djmatch_demo.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 <div class="caption">
-    A video demo of the DJ Recommendation Engine, as would be used by a user.
+    A video demo of the DJ Recommendation Engine.
 </div>
 
 
-There are three primary goals of this app:
+## Tech Stack
+
+### Back-end:
+- **Python** drives the core recommendation engine and statistical calculations, handling complex feature extraction and similarity computations
+  - Pandas, Sklearn, Numpy, Flask
+- **Spotipy** & **Spotify's Web API** enabled secure OAuth authentication (v1.0) and extensive music metadata access
+- **MongoDB** stores DJ profiles and matching data with flexible document schemas
+- **AcousticBrainz** & **MusicBrainz APIs** (current version) provide rich, open-source music metadata for audio feature analysis
+
+### Front-end:
+- **React** powers the responsive interface with efficient component-based development
+- **Next.js** delivers optimized performance through server and client-side rendering
+- **Vercel** and **Render** provide reliable hosting for the frontend and backend respectively
+
+
+_There are three primary goals of this app:_
 >1. Grow KXSC's reach by acquiring new listeners
 >2. Increase listener retention
 >3. Expedite the intern pairing process for KXSC's Intern Program
 
-Once the app is approved by Spotify for a user extension request, the DJ Recommendation Engine will be advertised as a starting point for new listeners. This will draw in new users
-who wish to see how their music taste stacks up against those in the radio station. Additionally, a system that matches by music taste is a novel practice--there are no other university
-radio stations that have a feature like this.
+[KXSC DJ Match](https://kxsc-dj-match.vercel.app) is the perfect starting point for new listeners. As the first tab on [kxsc.org](https://kxsc.org/), this app draws in new users who wish to see how their music taste stacks up against those in the radio station. 
+Additionally, a system that matches by music taste is a novel practice--there are no other university radio stations that have a feature like this.
 
-Users of this app are also more likely to stick around and for longer. I suspect a demonstrable increase in listener retention, for this service gives users an immediate starting point
+Users of this app are also more likely to stick around and for longer. Across its first semester since deployment, I suspect a demonstrable increase in listener retention because this service gives users an immediate starting point
 for which DJ, out of our ~70 DJs, they are most likely to enjoy. As a once first-time KXSC listener, I found the number and variety of DJs overwhelming and unnavigable. With over
 70 hours of programming each week, it is unrealistic and unlikely a user finds the DJ that will get them to come back each week. I believe my program solves a first-time listener's
-desire for a quick and easy starting point, increasing the chances that they come back for their matched-DJ's set each and every week.
+desire for a quick and easy starting point, increasing the chances that they come back for their matched DJ's set each and every week.
 
 <br/>
 <div class="row">
@@ -60,10 +73,9 @@ desire for a quick and easy starting point, increasing the chances that they com
 </div>
 
 I recognize that a matching system can lead to recommendations that are *too similar* to the user. For example, a user might have most of a DJ's catalog already in their library, thus
-rendering a match with them unhelpful/without anything new to present to the user. However, I argue that a 'too similar' match is not a downside in this case; DJs play new songs every
+rendering a match with them unhelpful/without anything new to present to the user. However, I argue that a "too similar" match is not a downside in this case; DJs play new songs every
 week, so fresh tunes are inevitable. Also, a DJ providing a new perspective on tracks you already know might not be a bad thing. There are still features in place to combat "too similar"
-matches, though: the song recommendation returns a song from the DJ's catalog that is most similar to the user's average audio features AND is not in the user's library, and the Top 5 DJ
-matches offers other options for the user to browse.
+matches, though: for example, providing the top 5 DJ matches alongside the main match offers other options for the user to browse.
 
 Finally, this app will be used to speed up the intern pairing process for KXSC's Intern Program. With over 120 intern applicants for only 15 to 20 spots each semester, I have worked with (and 
 will continue to refine with) the Intern Coordinators to assist in this process using a modified version of the DJ Recommendation Engine specifically designed for the intern pairing process.
@@ -71,13 +83,6 @@ The algorithm behind the calculations remains the same, but it creates matches f
 viable DJ-intern pairings (*purely based on music taste*) are given. The intern-matching process is and always will be a very human-led process--reading applications and determining qualifications
 and fit is something I will not claim my project can do. Rather, my project speeds up specifically one metric of the matching process, that being music preference similarity. My project
 assists in one aspect of the Intern Program's holistic review process.
-
-This project builds on everything I learned while coding the [Spotify Insights Hub](https://lee-64.github.io/projects/1_project/) for my Applied Python course. I also learned a lot while 
-developing this project. I've learned the ins-and-outs of Spotify's API while sifting through the verbose data structures that come with its API calls. Moreover, I worked with callback
-functions and managing user authorization/permissions beyond simple login/logout functionality. The Spotify OAuth process, using client credentials and access tokens, exposed me to an
-entirely new space of user<-->app<-->server frameworks that grant applications protected resources. Ultimately, implementing this feature allows the user to one-click sign in with Spotify, a 
-functionality that many modern websites utilize when you click buttons like "Sign in with Google". I believe that Spotify's API is a fantastic API to begin learning with because of its 
-extensive documentation and the daily relevance of Spotify's services.
 
 <br/>
 <div class="row">
@@ -117,4 +122,23 @@ The similarity values are then weighted with the number of song and artist match
 if the user doesn't recognize anything from the DJ's catalog. I found that some overlap makes a user much more likely to want to tune in to that DJ's set because they can expect some of their favorite songs and artists 
 to be played. Musical common ground with recognizable names is much more valuable to humans who don't see songs as an array of feature values.
 
-A demo of the DJ Recommendation Engine is viewable at <a href="https://kxsc.pythonanywhere.com/demo">kxsc.pythonanywhere.com/demo</a>.
+***
+
+The newest iteration of the DJ Recommendation Engine is a significant improvement from the original iteration (v1.0) in all regards. However, v1.0 did fully integrate with Spotify: users could connect their Spotify accounts to have their libraries and playlists automatically parsed and factored into the matching calculation.
+While this feature is no longer available, a demo of v1.0 (for proof-of-functionality) can be seen here:
+
+<br/>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include video.liquid path="assets/video/v1_djmatch_demo.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+    </div>
+</div>
+<div class="caption">
+    A video demo of v1.0 of the DJ Recommendation Engine, highlighting the integration with Spotify.
+</div>
+
+v1.0 built on everything I learned while coding the [Spotify Insights Hub](https://lee-64.github.io/projects/1_project/) for my Applied Python course. I also learned the ins-and-outs of Spotify's API while sifting through the verbose data structures that come with its API calls. Moreover, I worked with callback
+functions and managing user authorization/permissions beyond simple login/logout functionality. The Spotify OAuth process, using client credentials and access tokens, exposed me to an
+entirely new space of user<-->app<-->server frameworks that grant applications access to protected resources. Ultimately, implementing this feature allowed the user to one-click sign in with Spotify, a 
+functionality that many modern websites utilize when you click buttons like "Sign in with Google". This gave v1.0 a seamless and familiar UX, all the while emphasizing data privacy.  
+And, as a note to the reader: Spotify's API is a fantastic API to begin learning with because of its extensive documentation and the daily relevance of Spotify's services. You can build something genuinely applicable to your (and a consumer's) daily life, and very easily too--get started [here](https://developer.spotify.com/documentation/web-api).
