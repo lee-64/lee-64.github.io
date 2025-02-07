@@ -33,8 +33,12 @@ You can view a demo of the web app <a href="https://kxsc-dj-match.vercel.app">he
     A video demo of the DJ Recommendation Engine.
 </div>
 
+<br/>
 
+***
 ## Tech Stack
+<details open>
+<summary>Click to expand/collapse</summary>
 
 ### Back-end:
 - **Python** drives the core recommendation engine and statistical calculations, handling complex feature extraction and similarity computations
@@ -47,9 +51,12 @@ You can view a demo of the web app <a href="https://kxsc-dj-match.vercel.app">he
 - **React** powers the responsive interface with efficient component-based development
 - **Next.js** delivers optimized performance through server and client-side rendering
 - **Vercel** and **Render** provide reliable hosting for the frontend and backend respectively
+</details>
+
+***
 
 
-_There are three primary goals of this app:_
+## The Three Goals of this app
 >1. Grow KXSC's reach by acquiring new listeners
 >2. Increase listener retention
 >3. Expedite the intern pairing process for KXSC's Intern Program
@@ -123,6 +130,8 @@ if the user doesn't recognize anything from the DJ's catalog. I found that some 
 to be played. Musical common ground with recognizable names is much more valuable to humans who don't see songs as an array of feature values.
 
 ***
+
+#### v1.0
 
 The newest iteration of the DJ Recommendation Engine is a significant improvement from the original iteration (v1.0) in all regards. However, v1.0 did fully integrate with Spotify: users could connect their Spotify accounts to have their libraries and playlists automatically parsed and factored into the matching calculation.
 While this feature is no longer available, a demo of v1.0 (for proof-of-functionality) can be seen here:
