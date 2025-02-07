@@ -37,9 +37,6 @@ You can view a demo of the web app <a href="https://kxsc-dj-match.vercel.app">he
 
 ***
 ## Tech Stack
-<details open>
-<summary>Click to expand/collapse</summary>
-
 ### Back-end:
 - **Python** drives the core recommendation engine and statistical calculations, handling complex feature extraction and similarity computations
   - Pandas, Sklearn, Numpy, Flask
@@ -51,8 +48,6 @@ You can view a demo of the web app <a href="https://kxsc-dj-match.vercel.app">he
 - **React** powers the responsive interface with efficient component-based development
 - **Next.js** delivers optimized performance through server and client-side rendering
 - **Vercel** and **Render** provide reliable hosting for the frontend and backend respectively
-</details>
-
 ***
 
 
