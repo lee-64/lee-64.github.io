@@ -11,7 +11,9 @@ category: personal
 
 > Update:
 > At the end of 2024, <a href="https://developer.spotify.com/blog/2024-11-27-changes-to-the-web-api">Spotify revoked access for many of their API endpoints</a>. Endpoints like `GET /audio-features/{id}` which were heavily leveraged in this application are now inaccessible.
-> 
+>
+> <br>
+>
 > No worries at all! I have pivoted to a (similarly effective) solution that combines open-source music metadata from <a href="https://acousticbrainz.org">AcousticBrainz</a> and <a href="https://musicbrainz.org">MusicBrainz</a> with Spotify's API for track searches, popularity metrics, and artists' top songs. I have also significantly improved the UI/UX, website accessibility, hosting services (<a href="https://vercel.com/">Vercel</a> front-end and <a href="https://render.com">Render</a> back-end), and added more personalization features across the matching process.
 > A demo of the newest iteration of KXSC DJ Match is viewable <a href="https://kxsc-dj-match.vercel.app">here</a>. Please check it out! Additionally, here is the <a href="https://github.com/lee-64/kxsc_dj_match">GitHub repository</a>.
 
@@ -36,7 +38,9 @@ You can view a demo of the web app <a href="https://kxsc-dj-match.vercel.app">he
 <br/>
 
 ***
+
 ## Tech Stack
+
 ### Back-end:
 - **Python** drives the core recommendation engine and statistical calculations, handling complex feature extraction and similarity computations
   - Pandas, Sklearn, Numpy, Flask
@@ -48,6 +52,7 @@ You can view a demo of the web app <a href="https://kxsc-dj-match.vercel.app">he
 - **React** powers the responsive interface with efficient component-based development
 - **Next.js** delivers optimized performance through server and client-side rendering
 - **Vercel** and **Render** provide reliable hosting for the frontend and backend respectively
+
 ***
 
 
@@ -126,7 +131,7 @@ to be played. Musical common ground with recognizable names is much more valuabl
 
 ***
 
-#### v1.0
+#### v1.0 - Deprecated
 
 The newest iteration of the DJ Recommendation Engine is a significant improvement from the original iteration (v1.0) in all regards. However, v1.0 did fully integrate with Spotify: users could connect their Spotify accounts to have their libraries and playlists automatically parsed and factored into the matching calculation.
 While this feature is no longer available, a demo of v1.0 (for proof-of-functionality) can be seen here:
@@ -134,7 +139,7 @@ While this feature is no longer available, a demo of v1.0 (for proof-of-function
 <br/>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="assets/video/v1_djmatch_demo.mp4" class="img-fluid rounded z-depth-1" controls=true %}
+        {% include video.liquid path="assets/video/v1_demo.mp4" class="img-fluid rounded z-depth-1" controls=true %}
     </div>
 </div>
 <div class="caption">
